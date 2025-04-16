@@ -1,10 +1,10 @@
-// src/app/layout.tsx
+// app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Epson TM-M30 Printer App",
-  description: "Connect and print to Epson TM-M30 thermal printer",
+  description: "Next.js app for Epson TM-M30 printer",
 };
 
 export default function RootLayout({
@@ -14,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="container">{children}</div>
+      </body>
     </html>
   );
 }

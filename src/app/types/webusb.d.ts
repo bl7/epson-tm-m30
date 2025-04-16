@@ -37,3 +37,10 @@ interface USB {
 interface Navigator {
   usb: USB;
 }
+
+declare global {
+  interface Window {
+    epsonPrinter?: USBDevice;
+    epsonPrinterSocket?: WebSocket;
+  }
+}
